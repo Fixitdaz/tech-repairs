@@ -1,0 +1,28 @@
+# Dependencies 
+node_modules/ 
+ 
+# Build output 
+dist/ 
+build/ 
+ 
+# Database files 
+data/ 
+*.db 
+*.sqlite 
+ 
+# Logs 
+*.log 
+npm-debug.log* 
+ 
+# OS files 
+.DS_Store 
+Thumbs.db 
+ 
+# IDE files 
+.vscode/ 
+.idea/ 
+ 
+# Temporary files 
+*.tmp 
+*.temp 
+package-lock.json 

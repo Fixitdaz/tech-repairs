@@ -1,0 +1,40 @@
+{
+  "name": "tech-repairs",
+  "version": "1.0.0",
+  "description": "Complete repair shop management system",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win"
+  },
+  "author": "Tech Repairs",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3",
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  },
+  "build": {
+    "appId": "com.techrepairs.app",
+    "productName": "Tech Repairs",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "node_modules/sqlite3/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
